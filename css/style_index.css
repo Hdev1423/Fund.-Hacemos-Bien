@@ -69,21 +69,23 @@ header{
     align-items: center;
 }
 
-.container_portada .Bienvenida{
+.Bienvenida{
     max-width: 400px;
+    margin-left: 20px;
+    margin-right: 100px;
 }
 
-.container_portada .Bienvenida h1{
+.Bienvenida h1{
     font-size: 36px;
     font-weight: 600;
 }
 
-.container_portada .Bienvenida p{
+.Bienvenida p{
     font-size: 18px;
     margin-top: 40px;
 }
 
-.container_portada .Bienvenida input{
+.Bienvenida input{
     padding: 18px 50px;
     border: none;
     font-size: 16px;
@@ -93,14 +95,51 @@ header{
     background: linear-gradient(to right, #8bca2c, greenyellow);
     cursor: pointer;
     box-shadow: 1px 1px 30px 4px #8bca2c;
+    transition: all 300ms;
+}
+
+.container_portada .Bienvenida input:hover{
+    box-shadow: 1px 1px 30px 8px #8bca2c;
 }
 
 .img img{
-    width: 550px;
-    display: flex;
+    width: 525px;
+    animation: move-vector 5s linear infinite;
 }
 
+@keyframes move-vector {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
 
+.about_us{
+    display: flex;
+    justify-content: left;
+    margin-left: 80px;
+    margin-bottom: 150px;
+}
+.about_us .mision{
+    max-width: 500px;
+}
+.about_us .vision{
+    max-width: 600px;
+}
+
+.valores{
+    display: flex;
+    justify-content: center;
+}
+.valores ul li{
+    list-style: none;
+    margin-left: 25px;
+}
 
 
 /* Estilos para tabletas */
