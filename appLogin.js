@@ -6,19 +6,17 @@ form.addEventListener('submit', function(event) {
 
   event.preventDefault();
 
-  const emailValue = emailInput.value.trim();
-  const passwordValue = passwordInput.value.trim();
+  const storedEmail = localStorage.getItem("email");
+  const storedPassword = localStorage.getItem("password");
 
-  if (emailValue === '' || passwordValue === '') {
+  if (emailInput === '' || passwordInput === '') {
     alert('Por favor, completa todos los campos.');
     return;
   }
 
-  const storedEmail = localStorage.getItem('Email');
-  const storedPassword = localStorage.getItem('Password');
-
-  if (emailValue === storedEmail && passwordValue === storedPassword) {
+  if (emailInput === storedEmail && passwordInput === storedPassword) {
     alert('Inicio de sesión exitoso!');
+    window.location.href = "index.html";
   } else {
     alert('Las credenciales son incorrectas. Por favor, verifica tus datos.');
   }

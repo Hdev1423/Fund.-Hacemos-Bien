@@ -16,6 +16,6 @@ form.addEventListener("submit", function(event){
 
     localStorage.setItem("formData", formDataJson);
 
-    window.location.href = 'Login.html';
+    window.location.href = "Login.html";
 
 });
