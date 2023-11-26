@@ -3,31 +3,27 @@
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
-
+body{
+    padding: auto;
+    margin: auto;
+}
 footer{
     background-color: greenyellow;
-    width: 1358px;
 }
 footer h2{
     color: whitesmoke;
 }
 .menu{
-    width: 1358px;
     background-color: #64CE00;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
 }
-
-.menu_list{
-    align-content: center;
-}
-.menu_items{
+.menu a{
     list-style: none;
-    margin-left: 5px;
-    padding: 20px;
-    float: left;
+    margin-right: 2px;
+    padding: 18px;
     cursor: pointer;
 }
 .links{
@@ -40,11 +36,19 @@ footer h2{
     margin-top: 12px;
     color: whitesmoke;
 }
-.menu_items a{
+.menu a{
     color: whitesmoke;
     text-decoration: none;
 }
-
+.galeria_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 img{
-    height: 300px;
+    height: 280px;
+    padding: 5px;
+}
+main p{
+    margin: 20px 0 20px 0;
 }
