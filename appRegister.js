@@ -7,8 +7,8 @@ form.addEventListener("submit", function(event){
     var password = document.getElementById("password").value;
 
     var formData = {
-        Email: email,
-        Nombre: name,
+        Email: email ,
+        Nombre: name ,
         Password: password
     };
 
@@ -16,6 +16,6 @@ form.addEventListener("submit", function(event){
 
     localStorage.setItem("formData", formDataJson);
 
-    console.log(localStorage);
+    window.location.href = 'Login.html';
 
 });
