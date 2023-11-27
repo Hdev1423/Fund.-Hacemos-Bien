@@ -43,6 +43,7 @@ function iniciarSesion() {
         
         if (correo === usuario.correo && password === usuario.contraseña) {
             alert("Inicio exitoso")
+            location.href = "../index.html";
         } else {
             
             alert('Cuenta no registrada o datos incorrectos.');
@@ -53,4 +54,4 @@ function iniciarSesion() {
     }
   }
 
-  window.href = "index.html";
+  
