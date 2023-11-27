@@ -10,19 +10,20 @@
         <header >
             <div class="container_menu">
                 <div class="logo">
-                    <h2>Fundacion Hacemos Bien</h2>
+                    <h2>Fundación Hacemos Bien</h2>
+                    <div class="usuario_menu">
+                        <i class="fa-solid fa-user"></i>
+                        <p id="Username"></p>
+                    </div>
                 </div>
                 <div class="menu">
-                    <i class="fa-solid fa-bars" id="btn_menu"></i>
-                    <div id="back_menu"></div>
-                    <nav id="nav">
-                        <img src="imagenes/logo2.png">
+                    <nav>
                         <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="#seccion">Sobre Nosotros</a></li>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Sobre Nosotros</a></li>
                             <li><a href="#footer">Contactanos</a></li>
                             <li><a href="Registro.html" target="_blank">Registrate</a></li>
-                            <li><a href="Login.html" target="_blank">Iniciar Sesión</a></li>
+                            <li><a href="index.html">Cerrar Sesion</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,7 +43,7 @@
                     </div>
 
                     <div class="img">
-                        <img src="imagenes/logo1.png">
+                        <img src="../imagenes/a574ecd0-c370-4f14-8b89-c3bbacc20c27-transformed-removebg-preview.png">
                     </div>
 
                 </div>
@@ -71,20 +72,8 @@
                     <li>Calidad e innovación.</li>
                 </ul>
             </div>
-            <div class="resennas">
-                <h2>RESEÑAS</h2>
-                <div class="resenna_">
-                    <i class="fa-solid fa-user"></i>
-                    <h3>Me encantó</h3>
-                </div>
-                <div class="resenna_">
-                    <i class="fa-solid fa-user"></i>
-                    <h3>Es muy buena la atencion que se recive</h3>
-                </div>
-                <div class="resenna_">
-                    <i class="fa-solid fa-user"></i>
-                    <h3>Me gustaron las actividades</h3>
-                </div>
+            <div class="testimonios">
+
             </div>
         </main>
 
@@ -103,6 +92,10 @@
             <a href="https://instagram.com/fundacion_hacemos_bien?igshid=MzMyNGUyNmU2YQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script>
+            let UsuarioName = document.getElementById("Username");
+            let names = localStorage.getItem("nombreUsuario");
+            UsuarioName.innerText = names;
+        </script>
     </body>
 </html>

@@ -13,14 +13,28 @@ header{
     position: fixed;
     z-index: 1;
     background-color: #8bca2c;
+    padding: 40px;
 }
 
 .container_menu{
     max-width: 1200px;
     height: 100%;
     margin: auto;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
+}
+
+.usuario_menu{
+    color: white;
+    font-size: 18px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.usuario_menu p{
+    margin-left: 10px;
 }
 
 .logo{
@@ -52,6 +66,12 @@ header{
     font-size: 16px;
     color: white;
     text-transform: uppercase;
+}
+.menu nav img{
+    display: none;
+}
+#btn_menu{
+    display: none;
 }
 
 /*PORTADA*/
@@ -104,7 +124,7 @@ header{
 
 .img img{
     width: 525px;
-    animation: move-vector 5s linear infinite;
+    animation: move-vector 4s linear infinite;
 }
 
 @keyframes move-vector {
@@ -136,6 +156,7 @@ header{
     display: flex;
     justify-content: center;
 }
+
 .valores ul li{
     list-style: none;
     margin-left: 25px;
@@ -160,9 +181,84 @@ footer{
 .number_email{
     color: white;
 }
+.resennas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+.resennas h2{
+    margin-bottom: 10px;
+}
+.resennas_{
+    display: flex;
+    justify-content: center;
+}
 
 
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+    .container_portada .img img{
+        height: 500px;
+    }
   }
+@media screen and (max-width: 1200px) {
+    header{
+        padding: 30px;
+        align-items: center;
+    }
+  }
+@media screen and (max-width: 752px) {
+    .menu nav{
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background-color: white;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .menu ul li{
+        margin-top: 39px;
+        margin-left: 0;
+    }
+    .menu ul li a{
+        color: #8bca2c;
+    }
+    .menu nav img{
+        width: 60px;
+        display: block;
+    }
+    #back_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+    #btn_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.45);
+        font-size: 28px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    #btn_menu:hover{
+        background: rgba(255, 255, 255, 0.6);
+    }
+}

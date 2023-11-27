@@ -25,7 +25,7 @@ function almacenarUsuario() {
     localStorage.setItem('nombreUsuario', nombre);
 
     // Redirige al usuario a la página de inicio de sesión
-    window.location.href = "Login.html";
+    window.location.href = "Login.html"
 }
 
 function iniciarSesion() {
@@ -43,7 +43,9 @@ function iniciarSesion() {
         
         if (correo === usuario.correo && password === usuario.contraseña) {
             alert("Inicio exitoso")
-            window.location.href = 'index.html';
+
+            window.open("indexLogin.html");
+
         } else {
             
             alert('Cuenta no registrada o datos incorrectos.');
@@ -53,5 +55,3 @@ function iniciarSesion() {
         alert('Cuenta no registrada o datos incorrectos.');
     }
   }
-
-  
