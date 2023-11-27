@@ -1,15 +1,15 @@
-const form = document.getElementById('box_form');
-const emailInput = document.getElementById('correo');
-const passwordInput = document.getElementById('password');
+const form = document.getElementById("box_form");
+let emailInput = document.getElementById("correo");
+let passwordInput = document.getElementById("password");
 
-form.addEventListener('submit', function(event) {
+form.addEventListener("submit", function(event) {
 
   event.preventDefault();
 
-  const storedEmail = localStorage.getItem("email");
-  const storedPassword = localStorage.getItem("password");
+  const storedEmail = localStorage.getItem("Email");
+  const storedPassword = localStorage.getItem("Password");
 
-  if (emailInput === '' || passwordInput === '') {
+  if (emailInput === "" || passwordInput === "") {
     alert('Por favor, completa todos los campos.');
     return;
   }

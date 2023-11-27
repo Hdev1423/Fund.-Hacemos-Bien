@@ -141,11 +141,26 @@ header{
     margin-left: 25px;
 }
 
+footer{
+    margin-top: 150px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #8bca2c;
+}
 
-/* Estilos para tabletas */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+.link_redes i{
+    font-size: 25px;
+    margin-left: 15px;
+}
+.contact{
+    color: white;
+}
+.number_email{
+    color: white;
+}
 
-  }
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
